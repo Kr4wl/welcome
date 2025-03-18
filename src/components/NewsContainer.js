@@ -1,31 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import newsData from '../data/news.json';
 import './NewsContainer.css';
 
-function NewsContainer() {
+const NewsContainer = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const fetchNews = async () => {
-      try {
-        // Note: You'll need to set up a proxy or backend service to fetch from LeMonde
-        // due to CORS restrictions. This is a placeholder URL.
-        const response = await axios.get('https://api-proxy/lemonde/latest');
-        setNews(response.data);
-        setLoading(false);
-      } catch (err) {
-        setError('Failed to fetch news. Please try again later.');
-        setLoading(false);
-      }
-    };
-
-    fetchNews();
+    loadNews();
   }, []);
 
+  const loadNews = () => {
+    try {
+      setNews(newsData.articles);
+      setLoading(false);
+    } catch (err) {
+      setError('Failed to load news. Please try again later.');
+      setLoading(false);
+    }
+  };
+
   if (loading) {
-    return <div className="loading">Loading latest news...</div>;
+    return <div className="loading">Loading...</div>;
   }
 
   if (error) {
@@ -34,26 +31,26 @@ function NewsContainer() {
 
   return (
     <div className="news-container">
-      {news.map((article, index) => (
-        <article key={index} className="news-article">
-          {article.image && (
-            <img src={article.image} alt={article.title} className="article-image" />
-          )}
+      {news.map((article) => (
+        <div key={article.id} className="news-article">
+          <img src={article.imageUrl} alt={article.title} className="article-image" />
           <div className="article-content">
             <h2>{article.title}</h2>
-            <p className="article-description">{article.description}</p>
-            <div className="article-meta">
-              <span className="article-category">{article.category}</span>
-              <span className="article-date">{article.publishedAt}</span>
-            </div>
-            <a href={article.url} target="_blank" rel="noopener noreferrer" className="read-more">
-              Read More
+            <p className="article-meta">
+              <span className="category">{article.category}</span> | 
+              <span className="author">{article.author}</span> | 
+              <span className="date">{new Date(article.publishedAt).toLocaleDateString()}</span>
+            </p>
+            <p className="description">{article.description}</p>
+            <p className="content">{article.content}</p>
+            <a href={article.sourceUrl} target="_blank" rel="noopener noreferrer" className="source-link">
+              Lire l'article complet sur Le Monde
             </a>
           </div>
-        </article>
+        </div>
       ))}
     </div>
   );
-}
+};
 
 export default NewsContainer;

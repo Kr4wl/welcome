@@ -1,0 +1,59 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Gaza : L'ONU alerte sur une catastrophe humanitaire sans précédent",
+      "description": "Plus de 96% des femmes et des enfants ne peuvent subvenir à leurs besoins nutritionnels de base dans la bande de Gaza.",
+      "category": "International",
+      "author": "Rémy Ourdan",
+      "publishedAt": "2025-03-18T09:30:00Z",
+      "imageUrl": "https://picsum.photos/800/400?random=1",
+      "content": "La situation humanitaire à Gaza atteint un niveau critique avec des pénuries d'eau s'aggravant, atteignant seulement 4,74 litres disponibles par personne et par jour. Les organisations internationales tirent la sonnette d'alarme face à une crise alimentaire majeure, particulièrement chez les femmes et les enfants.",
+      "sourceUrl": "https://www.lemonde.fr/international/article/2025/03/18/gaza-catastrophe-humanitaire-onu-alerte_6225847_3210.html"
+    },
+    {
+      "id": 2,
+      "title": "Élections européennes 2025 : Les derniers sondages bouleversent les pronostics",
+      "description": "À trois mois du scrutin, de nouveaux sondages révèlent une recomposition inattendue du paysage politique européen.",
+      "category": "Politique",
+      "author": "Sylvie Kauffmann",
+      "publishedAt": "2025-03-18T10:15:00Z",
+      "imageUrl": "https://picsum.photos/800/400?random=2",
+      "content": "Les dernières enquêtes d'opinion montrent une progression significative des partis écologistes et centristes dans plusieurs pays de l'UE, tandis que les formations traditionnelles peinent à maintenir leur influence. Cette tendance pourrait aboutir à un Parlement européen profondément renouvelé.",
+      "sourceUrl": "https://www.lemonde.fr/politique/article/2025/03/18/elections-europeennes-sondages-recomposition_6225848_823448.html"
+    },
+    {
+      "id": 3,
+      "title": "Intelligence artificielle : Une avancée majeure dans le traitement du cancer",
+      "description": "Des chercheurs français annoncent une percée significative dans l'utilisation de l'IA pour le diagnostic précoce.",
+      "category": "Sciences",
+      "author": "David Larousserie",
+      "publishedAt": "2025-03-18T11:45:00Z",
+      "imageUrl": "https://picsum.photos/800/400?random=3",
+      "content": "Une équipe de l'Institut Gustave Roussy présente un nouveau système d'intelligence artificielle capable de détecter les tumeurs cancéreuses avec une précision inédite. Cette innovation pourrait révolutionner le dépistage précoce et améliorer significativement les chances de guérison des patients.",
+      "sourceUrl": "https://www.lemonde.fr/sciences/article/2025/03/18/ia-cancer-avancee-majeure_6225849_1650684.html"
+    },
+    {
+      "id": 4,
+      "title": "Crise climatique : Les océans atteignent des températures record",
+      "description": "Les scientifiques observent une hausse alarmante des températures océaniques au premier trimestre 2025.",
+      "category": "Environnement",
+      "author": "Stéphane Foucart",
+      "publishedAt": "2025-03-18T08:30:00Z",
+      "imageUrl": "https://picsum.photos/800/400?random=4",
+      "content": "Les données satellitaires révèlent des anomalies thermiques sans précédent dans les océans, avec des températures dépassant de plus de 1,5°C les moyennes historiques. Cette situation menace les écosystèmes marins et pourrait avoir des répercussions majeures sur le climat mondial.",
+      "sourceUrl": "https://www.lemonde.fr/planete/article/2025/03/18/oceans-temperatures-record-2025_6225850_3244.html"
+    },
+    {
+      "id": 5,
+      "title": "Innovation : La France lance son premier train à hydrogène commercial",
+      "description": "Une première ligne ferroviaire française fonctionnant entièrement à l'hydrogène entre en service.",
+      "category": "Économie",
+      "author": "Philippe Escande",
+      "publishedAt": "2025-03-18T12:20:00Z",
+      "imageUrl": "https://picsum.photos/800/400?random=5",
+      "content": "La SNCF inaugure sa première ligne commerciale utilisant des trains à hydrogène, marquant une étape majeure dans la transition énergétique des transports. Cette innovation française, fruit de plusieurs années de développement, pourrait être déployée sur d'autres lignes régionales dans les années à venir.",
+      "sourceUrl": "https://www.lemonde.fr/economie/article/2025/03/18/france-premier-train-hydrogene-commercial_6225851_3234.html"
+    }
+  ]
+} 
