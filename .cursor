@@ -1,0 +1,8 @@
+{
+    "projectName": "welcome",
+    "aiCommitMessages": true,
+    "aiEnabled": true,
+    "deleteFileProtection": true,
+    "deleteDirectoryProtection": true,
+    "commandDenylist": ["rm"]
+}
